@@ -55,7 +55,9 @@ li.homapage_menu a {
   border-radius: 4px;
   position: relative;
   cursor: pointer;
-  margin: 25px; }
+  left: 50%;
+  margin-left: -100px;
+  color: #fff; }
   .button-continue::after {
     content: "CONTINUE";
     position: absolute;
@@ -63,21 +65,20 @@ li.homapage_menu a {
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
-    color: #C25EF1;
+    color: #fff;
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear; }
   .button-continue::before {
     content: "";
     position: relative;
     display: block;
-    height: 15px;
-    width: 15px;
-    background: #C25EF1;
+    height: 10px;
+    width: 10px;
+    background: #fff;
     -webkit-box-shadow: 0px 0px 10px 3px #C25EF1;
             box-shadow: 0px 0px 10px 3px #C25EF1;
-    margin-left: -8px;
-    margin-top: -8px;
-    opacity: 0;
+    margin-left: -5px;
+    margin-top: -5px;
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
     border-radius: 100%;
@@ -86,40 +87,38 @@ li.homapage_menu a {
 
 @-webkit-keyframes star {
   0% {
-    margin-left: -8px;
-    margin-top: -8px; }
+    margin-left: -5px;
+    margin-top: -5px; }
   25% {
-    margin-left: 194px;
-    margin-top: -8px; }
+    margin-left: 195px;
+    margin-top: -5px; }
   50% {
-    margin-left: 194px;
+    margin-left: 195px;
     margin-top: 75px; }
   75% {
-    margin-left: -8px;
+    margin-left: -5px;
     margin-top: 75px; }
   100% {
-    margin-left: -8px;
-    margin-top: -8px; } }
+    margin-left: -5px;
+    margin-top: -5px; } }
 
 @keyframes star {
   0% {
-    margin-left: -8px;
-    margin-top: -8px; }
+    margin-left: -5px;
+    margin-top: -5px; }
   25% {
-    margin-left: 194px;
-    margin-top: -8px; }
+    margin-left: 195px;
+    margin-top: -5px; }
   50% {
-    margin-left: 194px;
+    margin-left: 195px;
     margin-top: 75px; }
   75% {
-    margin-left: -8px;
+    margin-left: -5px;
     margin-top: 75px; }
   100% {
-    margin-left: -8px;
-    margin-top: -8px; } }
+    margin-left: -5px;
+    margin-top: -5px; } }
   .button-continue:hover::before {
     opacity: 1;
     -webkit-animation: star 2s ease-in-out infinite;
             animation: star 2s ease-in-out infinite; }
-  .button-continue:hover::after {
-    color: #fff; }

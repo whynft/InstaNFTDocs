@@ -91,7 +91,9 @@ li.homapage_menu {
   border-radius: 4px;
   position: relative;
   cursor: pointer;
-  margin: 25px;
+  left: 50%;
+  margin-left: -100px;
+  color: $tint-primary-color;
 
   &::after {
     content: "CONTINUE";
@@ -99,7 +101,7 @@ li.homapage_menu {
     top: 41%;
     left: 50%;
     transform: translate(-50%);
-    color: $text-primary-color;
+    color: $tint-primary-color;
     transition: all 0.1s linear;
   }
 
@@ -107,13 +109,12 @@ li.homapage_menu {
     content: "";
     position: relative;
     display: block;
-    height: 15px;
-    width: 15px;
-    background: $text-primary-color;
+    height: 10px;
+    width: 10px;
+    background: $tint-primary-color;
     box-shadow: 0px 0px 10px 3px $text-primary-color;
-    margin-left: -8px;
-    margin-top: -8px;
-    opacity: 0;
+    margin-left: -5px;
+    margin-top: -5px;
     transition: all 0.1s linear;
     border-radius: 100%;
     animation: star 2s ease-in-out infinite;
@@ -121,25 +122,25 @@ li.homapage_menu {
 
   @keyframes star {
     0% {
-      margin-left: -8px;
-      margin-top: -8px;
+      margin-left: -5px;
+      margin-top: -5px;
     }
     25% {
-      margin-left: 194px;
-      margin-top: -8px;
+      margin-left: 195px;
+      margin-top: -5px;
     }
 
     50% {
-      margin-left: 194px;
+      margin-left: 195px;
       margin-top: 75px;
     }
     75% {
-      margin-left: -8px;
+      margin-left: -5px;
       margin-top: 75px;
     }
     100% {
-      margin-left: -8px;
-      margin-top: -8px;
+      margin-left: -5px;
+      margin-top: -5px;
     }
   }
 
@@ -147,10 +148,6 @@ li.homapage_menu {
     &::before {
       opacity: 1;
       animation: star 2s ease-in-out infinite;
-    }
-
-    &::after {
-      color: $tint-primary-color;
     }
   }
 }
